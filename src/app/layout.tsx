@@ -33,8 +33,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <div className="flex flex-col min-h-screen">
           <Providers>
             <Background.SmallSquares>
-              <Nav />
-              <div className="flex-1">{children}</div>
+              <div className="flex flex-col min-h-screen w-full">
+                <Nav />
+                {children}
+              </div>
             </Background.SmallSquares>
           </Providers>
         </div>
