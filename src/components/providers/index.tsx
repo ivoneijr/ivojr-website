@@ -24,7 +24,7 @@ export const Providers = ({ children }: PropsWithChildren) => {
 
   return (
     <QueryClientProvider client={client}>
-      <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
         <ReactQueryStreamedHydration>
           <OverlaysProvider />
           <TooltipProvider>{children}</TooltipProvider>

@@ -5,7 +5,7 @@ import type { PropsWithChildren } from "react";
 import { Devtools } from "@/components/(devtools)";
 import { Providers } from "@/components/providers";
 
-import "./globals.css";
+import "./styles/globals.css";
 import { cn } from "@/lib/utils";
 
 const geistSans = localFont({
