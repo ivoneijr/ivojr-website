@@ -1,4 +1,4 @@
-import { plugins } from './tailwind.custom-plugins'
+import { plugins } from './tailwind.plugins'
 import type { Config } from "tailwindcss";
 
 const config: Config = {
