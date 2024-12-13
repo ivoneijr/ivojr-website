@@ -7,6 +7,8 @@ import { Providers } from "@/components/providers";
 
 import "./styles/globals.css";
 import { cn } from "@/lib/utils";
+import { Background } from "@/components/background";
+import { Nav } from "@/components/layout/nav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +31,12 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="en" suppressHydrationWarning>
       <body className={cn("antialiased h-screen w-screen", geistSans.variable, geistMono.variable)}>
         <div className="flex flex-col min-h-screen">
-          <Providers>{children}</Providers>
+          <Providers>
+            <Background.SmallSquares>
+              <Nav />
+              <div className="flex-1">{children}</div>
+            </Background.SmallSquares>
+          </Providers>
         </div>
         <Devtools.FloatingAdmin />
       </body>
